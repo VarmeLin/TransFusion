@@ -1,0 +1,235 @@
+{
+    "latency": 5532.606920588059,
+    "energy": 1.982322565946817e+16,
+    "energy_rsts": {
+        "DRAM": 5555227524268032.0,
+        "L3": 4548670457883610.0,
+        "reg_file": 33931212715373.547,
+        "PE": 9685396464601154.0,
+        "total": 1.982322565946817e+16
+    },
+    "tl_rsts": {
+        "FFN": {
+            "tl_rst": {
+                "comp_latency": 1169.693221038298,
+                "mem_latency": 2184.5333338419596,
+                "traffic": 70368744194048,
+                "energy": 15387674026818.14,
+                "traffic_energy": 6332102895902797.0,
+                "traffic_energy_foreach": {
+                    "DRAM": 2195504818854297.5,
+                    "L3": 4120675049377845.5,
+                    "reg_file": 15923027670654.176,
+                    "traffic": {
+                        "DRAM": {
+                            "read": 8796093024256.0,
+                            "write": 0.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "L3": {
+                            "read": 145492017184.0,
+                            "write": 146028888096.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "reg_file_2d": {
+                            "read": 4397509640192.0,
+                            "write": 3306587947520.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "reg_file_1d": {
+                            "read": 0,
+                            "write": 0,
+                            "update": 0,
+                            "leak": 0
+                        }
+                    }
+                },
+                "mac_instances": 256,
+                "mac_utilized_instances": 256
+            },
+            "factors": {
+                "DRAM": {
+                    "B": 64,
+                    "S": 512,
+                    "P": 16384,
+                    "F": 128,
+                    "H": 16
+                },
+                "L3": {
+                    "B": 1,
+                    "S": 1,
+                    "P": 1,
+                    "F": 1,
+                    "H": 1
+                },
+                "PE": {
+                    "B": 1,
+                    "S": 1,
+                    "P": 16,
+                    "F": 1,
+                    "H": 1
+                },
+                "reg_file": {
+                    "B": 1,
+                    "S": 1,
+                    "P": 1,
+                    "F": 1,
+                    "H": 1
+                },
+                "PE_col": {
+                    "B": 1,
+                    "S": 16,
+                    "P": 1,
+                    "F": 1,
+                    "H": 1
+                }
+            }
+        },
+        "AR": {
+            "tl_rst": {
+                "comp_latency": 5.140253412765958,
+                "mem_latency": 0.0,
+                "traffic": 0,
+                "energy": 7513512708.41,
+                "traffic_energy": 15174238182548.963,
+                "traffic_energy_foreach": {
+                    "DRAM": 0.0,
+                    "L3": 15174238182548.963,
+                    "reg_file": 0.0,
+                    "traffic": {
+                        "DRAM": {
+                            "read": 0.0,
+                            "write": 0.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "L3": {
+                            "read": 536870912.0,
+                            "write": 536870912.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "reg_file_2d": {
+                            "read": 0,
+                            "write": 0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "reg_file_1d": {
+                            "read": 0.0,
+                            "write": 0.0,
+                            "update": 0,
+                            "leak": 0
+                        }
+                    }
+                },
+                "mac_instances": 256,
+                "mac_utilized_instances": 256
+            },
+            "factors": {
+                "DRAM": {
+                    "B": 64,
+                    "S": 8192,
+                    "P": 1024
+                },
+                "L3": {
+                    "B": 1,
+                    "S": 1,
+                    "P": 1
+                },
+                "PE": {
+                    "B": 1,
+                    "S": 1,
+                    "P": 256
+                },
+                "reg_file": {
+                    "B": 1,
+                    "S": 1,
+                    "P": 1
+                }
+            }
+        },
+        "FFNT": {
+            "tl_rst": {
+                "comp_latency": 1169.693221038298,
+                "mem_latency": 3342.9333333333334,
+                "traffic": 107683420045312,
+                "energy": 15387674026818.14,
+                "traffic_energy": 8569852134320155.0,
+                "traffic_energy_foreach": {
+                    "DRAM": 3359722705413734.5,
+                    "L3": 5192121243861701.0,
+                    "reg_file": 18008185044719.367,
+                    "traffic": {
+                        "DRAM": {
+                            "read": 9062380994560.0,
+                            "write": 4398046511104.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "L3": {
+                            "read": 150189637632.0,
+                            "write": 210319179776.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "reg_file_2d": {
+                            "read": 4395899027456.0,
+                            "write": 4404488962048.0,
+                            "update": 0,
+                            "leak": 0
+                        },
+                        "reg_file_1d": {
+                            "read": 0,
+                            "write": 0,
+                            "update": 0,
+                            "leak": 0
+                        }
+                    }
+                },
+                "mac_instances": 256,
+                "mac_utilized_instances": 256
+            },
+            "factors": {
+                "DRAM": {
+                    "B": 64,
+                    "F": 128,
+                    "H": 16,
+                    "P": 16384,
+                    "S": 512
+                },
+                "L3": {
+                    "B": 1,
+                    "F": 1,
+                    "H": 1,
+                    "P": 1,
+                    "S": 1
+                },
+                "PE": {
+                    "B": 1,
+                    "F": 1,
+                    "H": 1,
+                    "P": 16,
+                    "S": 1
+                },
+                "reg_file": {
+                    "B": 1,
+                    "F": 1,
+                    "H": 1,
+                    "P": 1,
+                    "S": 1
+                },
+                "PE_col": {
+                    "B": 1,
+                    "F": 1,
+                    "H": 1,
+                    "P": 1,
+                    "S": 16
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+problem:
+  version: '0.4'
+  shape:
+
+    name: Q
+
+    dimensions: [B, D, E, H, P]
+
+    # Note: Since rank names can only be 1 character long
+    # M = M1 and N = M0
+    data_spaces:
+    - name: INPQ
+      projection:
+      - - - B
+      - - - D
+      - - - P
+    - name: WQ
+      projection:
+      - - - D
+      - - - E
+      - - - H
+    - name: Q
+      projection:
+      - - - B
+      - - - E
+      - - - H
+      - - - P
+      read_write: True
+
+  instance:
+    B: 64
+    D: 768
+    H: 16
+    E: 64
+    P: 1024

@@ -1,0 +1,38 @@
+problem:
+  version: '0.4'
+  shape:
+
+    name: BK
+
+    dimensions: [B, D, H, E, M, N]
+
+    # Note: Since rank names can only be 1 character long
+    # M = M1 and N = M0
+    data_spaces:
+    - name: INPK
+      projection:
+      - - - B
+      - - - D
+      - - - M
+      - - - N
+    - name: WK
+      projection:
+      - - - D
+      - - - E
+      - - - H
+    - name: BK
+      projection:
+      - - - B
+      - - - E
+      - - - H
+      - - - M
+      - - - N
+      read_write: True
+
+  instance:
+    B: 64
+    D: 768
+    H: 16
+    E: 64
+    M: 4
+    N: 256
